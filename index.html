@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>City Hospital</h1>
+        <nav>
+            <ul>
+                <li><a href="#doctors">Doctors</a></li>
+                <li><a href="#appointment">Appointment</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Doctors Listing Section -->
+    <section id="doctors">
+        <h2>Our Doctors</h2>
+        <div class="doctor-list">
+            <div class="doctor">
+                <img src="https://i.pinimg.com/originals/8d/e4/38/8de438db00e87ac90afb2d7737440aa0.jpg" alt="Doctor 1">
+                <h3>Dr. John Doe</h3>
+                <p>Specialty: Cardiology</p>
+            </div>
+            <div class="doctor">
+                <img src="https://img.freepik.com/free-photo/female-doctor-hospital_23-2148827760.jpg?semt=ais_hybrid" alt="Doctor 2">
+                <h3>Dr. Jane Smith</h3>
+                <p>Specialty: Dermatology</p>
+            </div>
+            <div class="doctor">
+                <img src="https://img.freepik.com/premium-photo/doctor-having-good-news-his-patient_13339-193678.jpg?semt=ais_hybrid" alt="Doctor 3">
+                <h3>Dr. Alice Brown</h3>
+                <p>Specialty: Neurology</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Form Section -->
+    <section id="appointment">
+        <h2>Book an Appointment</h2>
+        <form id="appointment-form">
+            <label for="patient-name">Full Name:</label>
+            <input type="text" id="patient-name" name="patient-name" required>
+
+            <label for="doctor">Choose a Doctor:</label>
+            <select id="doctor" name="doctor">
+                <option value="Dr. John Doe">Dr. John Doe</option>
+                <option value="Dr. Jane Smith">Dr. Jane Smith</option>
+                <option value="Dr. Alice Brown">Dr. Alice Brown</option>
+            </select>
+
+            <label for="appointment-date">Preferred Appointment Date:</label>
+            <input type="date" id="appointment-date" name="appointment-date" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Any additional information"></textarea>
+
+            <button type="submit">Book Appointment</button>
+        </form>
+        <div id="confirmation" style="display:none;">
+            <p>Your appointment has been booked successfully!</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@cityhospital.com</p>
+        <p>Phone: +123 456 7890</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 City Hospital</p>
+    </footer>
+</body>
+
+</html>
+
